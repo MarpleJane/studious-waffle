@@ -41,7 +41,10 @@ export default {
         handleEdit(index, row) {
             console.log(index, row)
         },
-        addNew() {},
+        addNew() {
+            // this.$router.push({name:'AddAdmin'})
+            this.$router.push({name: 'AddAdmin'})
+        },
         handleCurrentChange() {},
         fetchData() {},
     },

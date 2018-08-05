@@ -6,7 +6,7 @@
           background-color="#000"
           text-color="#fff"
           active-text-color="#fff">
-            <el-menu-item index="/">
+            <el-menu-item index="/admin_management">
                 <i class="el-icon-menu"></i>
                 <span slot="title">账号管理</span>
             </el-menu-item>

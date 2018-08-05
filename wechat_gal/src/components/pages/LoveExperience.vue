@@ -50,7 +50,9 @@ export default {
         this.fetchData()
     },
     methods: {
-        addNew() {},
+        addNew() {
+            this.$router.push({name: 'AddLoveExp'})
+        },
         handleEdit(index, row) {},
         handleDel(index, row) {},
         handleCurrentChange() {},

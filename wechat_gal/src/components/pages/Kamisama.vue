@@ -2,7 +2,7 @@
     <div>
         <h3>神明的一天</h3>
         <el-button type="primary" @click="addNew">新增</el-button>
-        <el-table :data="kiraData" style="width: 100%">
+        <el-table :data="kamiData" style="width: 100%">
             <el-table-column prop="id" label="ID"></el-table-column>
             <el-table-column prop="plot_name" label="剧情名"></el-table-column>
             <el-table-column label="背景图">
@@ -50,7 +50,9 @@ export default {
         this.fetchData()
     },
     methods: {
-        addNew() {},
+        addNew() {
+            this.$router.push({name: 'AddKamisama'})
+        },
         handleEdit(index, row) {},
         handleDel(index, row) {},
         handleCurrentChange() {},
