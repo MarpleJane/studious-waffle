@@ -37,6 +37,11 @@ export default new Router({
       name: 'AddLoveExp',
       component: AddLoveExp
     },
+    {
+      path: '/simulation/love_experience/edit',
+      name: 'EditLoveExp',
+      component: AddLoveExp
+    },
 
     {
       path: '/simulation/dregs_experience',
@@ -46,6 +51,11 @@ export default new Router({
     {
       path: '/simulation/dregs_experience/add_new',
       name: 'AddDregsExp',
+      component: AddDregsExp
+    },
+    {
+      path: '/simulation/dregs_experience/edit',
+      name: 'EditDregsExp',
       component: AddDregsExp
     },
 
@@ -59,6 +69,11 @@ export default new Router({
       name: 'AddKiraCampus',
       component: AddKiraCampus
     },
+    {
+      path: '/chapter/kira_campus/edit',
+      name: 'EditKiraCampus',
+      component: AddKiraCampus
+    },
 
     {
       path: '/chapter/kamisama',
@@ -68,6 +83,11 @@ export default new Router({
     {
       path: '/chapter/kamisama/add_new',
       name: 'AddKamisama',
+      component: AddKamisama
+    },
+    {
+      path: '/chapter/kamisama/edit',
+      name: 'EditKamisama',
       component: AddKamisama
     },
   ]
