@@ -5,15 +5,9 @@
         <el-table v-loading="loading" :data="dregsExpData" style="width: 100%">
             <el-table-column prop="id" label="ID"></el-table-column>
             <el-table-column prop="plot_name" label="剧情名"></el-table-column>
-            <el-table-column label="背景图">
+            <el-table-column label="背景图" width="200px">
                 <template slot-scope="scope">
-                    <el-popover
-                      placement="left"
-                      trigger="hover"
-                      width="490px">
-                      <img :src="scope.row.cover_path" width="100%" height="50%">
-                      <el-button slot="reference">查看</el-button>
-                    </el-popover>
+                      <img :src="scope.row.cover_path" width="150px" height="150px">
                 </template>
             </el-table-column>
             <el-table-column prop="position" label="排序值"></el-table-column>
